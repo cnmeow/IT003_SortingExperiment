@@ -21,5 +21,7 @@ git clone git@github.com:cnmeow/IT003_SortingExperiment.git
 2. Folder **`input`** đã có sẵn 10 bộ dữ liệu. Nếu bạn cần bộ dữ liệu mới, mở thư mục **`code`**, chạy file **`GenarateInput.cpp`**. Bộ dữ liệu mới sẽ được tạo ra ở thư mục **`input`**.
 3. Mở thư mục **`code`**, chạy file code của thuật toán cần thí nghiệm. Dữ liệu đầu ra gồm 10 dòng tương ứng với thời gian (microseconds) mà thuật toán đó sắp xếp 10 bộ dữ liệu.
 
+## 🔹 Kiểm tra tính đúng đắn của các thuật toán
+Trong code của các thuật toán sắp xếp đã có hàm kiểm tra, nếu thuật toán sắp xếp **SAI** sẽ không có dữ liệu đầu ra.
 ---
 # 🐱🐱🐱
