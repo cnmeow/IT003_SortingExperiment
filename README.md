@@ -18,7 +18,7 @@ Repository chứa file báo cáo kết quả thực nghiệm (pdf) và hai thư 
 ```
 git clone git@github.com:cnmeow/IT003_SortingExperiment.git
 ```
-2. Nếu bạn cần bộ test mới, mở thư mục **`code`**, chạy file **`GenarateInput.cpp`**. Bộ test mới sẽ được tạo ra ở thư mục **`input`**.
+2. Folder **`input`** đã có sẵn 10 bộ dữ liệu. Nếu bạn cần bộ dữ liệu mới, mở thư mục **`code`**, chạy file **`GenarateInput.cpp`**. Bộ dữ liệu mới sẽ được tạo ra ở thư mục **`input`**.
 3. Mở thư mục **`code`**, chạy file code của thuật toán cần thí nghiệm. Dữ liệu đầu ra gồm 10 dòng tương ứng với thời gian mà thuật toán đó sắp xếp 10 bộ dữ liệu.
 
 ---
