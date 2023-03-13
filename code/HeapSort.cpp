@@ -2,7 +2,7 @@
 using namespace std;
 using namespace std::chrono;
 const int n = 1000000;
-int a[1000005], b[1000005];
+int a[n+5], b[n+5];
 void heapify(int N, int i) {
     int largest = i;
     int l = 2 * i + 1, r = 2 * i + 2;
