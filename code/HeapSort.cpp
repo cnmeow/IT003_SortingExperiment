@@ -2,7 +2,7 @@
 using namespace std;
 using namespace std::chrono;
 const int n = 1000000;
-int a[1000005];
+int a[1000005], b[1000005];
 void heapify(int N, int i) {
     int largest = i;
     int l = 2 * i + 1, r = 2 * i + 2;
@@ -24,10 +24,15 @@ int main() {
     for (int Test = 1; Test <= 10; ++Test) {
         string filename = "input/test" + to_string(Test) + ".inp";
         ifstream fi(filename);
-        for (int i = 0; i < n; ++i) fi >> a[i];
+        for (int i = 0; i < n; ++i) {
+            fi >> a[i]; b[i] = a[i];
+        }
         auto starttime = high_resolution_clock::now();
         heapSort();
         auto finishtime = high_resolution_clock::now();
+        sort(b, b+n);
+        for (int i = 0; i < n; ++i)
+            if (a[i] != b[i]) return 0;
         cout << duration_cast<microseconds>(finishtime - starttime).count() <<'\n';
     }
     return 0;
