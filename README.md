@@ -23,5 +23,6 @@ git clone git@github.com:cnmeow/IT003_SortingExperiment.git
 
 ## 🔹 Kiểm tra tính đúng đắn của các thuật toán
 Trong code của các thuật toán sắp xếp đã có hàm kiểm tra, nếu thuật toán sắp xếp **SAI** sẽ không có dữ liệu đầu ra.
+
 ---
 # 🐱🐱🐱
