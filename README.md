@@ -6,7 +6,7 @@ Thí nghiệm ghi nhận thời gian thực thi 10 bộ dữ liệu của các t
 ## 🔹 Cấu trúc Repository
 Repository chứa file báo cáo kết quả thực nghiệm (pdf) và hai thư mục chính:
 
-1. **`code`**: Chứa code của các thuật toán sắp xếp `QuickSort.cpp`, `HeapSort.cpp`, `Mergesort.cpp` và `SortCpp.cpp`.
+1. **`code`**: Chứa code sinh ra bộ test `GenarateInput.cpp`, các thuật toán sắp xếp `QuickSort.cpp`, `HeapSort.cpp`, `Mergesort.cpp` và `SortCpp.cpp`.
 2. **`test`**: Chứa 10 bộ dữ liệu được sử dụng để kiểm tra thuật toán. Mỗi tệp chứa một dãy số thực ngẫu nhiên. 
    - Tệp **`test1.inp`** chứa dãy được sắp xếp ***tăng dần***
    - Tệp **`test2.inp`** chứa dãy được sắp xếp ***giảm dần***
@@ -18,7 +18,8 @@ Repository chứa file báo cáo kết quả thực nghiệm (pdf) và hai thư 
 ```
 git clone git@github.com:cnmeow/IT003_SortingExperiment.git
 ```
-2. Mở thư mục **`code`**, chạy file code của thuật toán cần thí nghiệm. Dữ liệu đầu ra gồm 10 dòng tương ứng với thời gian mà thuật toán đó sắp xếp 10 bộ dữ liệu.
+2. Nếu bạn cần bộ test mới, mở thư mục **`code`**, chạy file **`GenarateInput.cpp`**. Bộ test mới sẽ được tạo ra ở thư mục **`test`**.
+3. Mở thư mục **`code`**, chạy file code của thuật toán cần thí nghiệm. Dữ liệu đầu ra gồm 10 dòng tương ứng với thời gian mà thuật toán đó sắp xếp 10 bộ dữ liệu.
 
 ---
 # 🐱🐱🐱
