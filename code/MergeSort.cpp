@@ -2,7 +2,7 @@
 using namespace std;
 using namespace std::chrono;
 const int n = 1000000;
-int a[1000005];
+int a[n+5], b[n+5];
 void merge(int l, int mid, int r) {
     int subarr1 = mid - l + 1, subarr2 = r - mid;
     vector<int> larr(subarr1), rarr(subarr2);
@@ -40,10 +40,15 @@ int main() {
     for (int Test = 1; Test <= 10; ++Test) {
         string filename = "input/test" + to_string(Test) + ".inp";
         ifstream fi(filename);
-        for (int i = 0; i < n; ++i) fi >> a[i];
+        for (int i = 0; i < n; ++i) {
+            fi >> a[i]; b[i] = a[i];
+        }
         auto starttime = high_resolution_clock::now();
         mergeSort(0, n-1);
         auto finishtime = high_resolution_clock::now();
+        sort(b, b+n);
+        for (int i = 0; i < n; ++i)
+            if (a[i] != b[i]) return 0;
         cout << duration_cast<microseconds>(finishtime - starttime).count() <<'\n';
     }
     return 0;
