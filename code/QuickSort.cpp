@@ -15,7 +15,7 @@ int partition(int l, int r) {
     return (i + 1);
 }
 int partition_r(int l, int r) {
-    srand(time(NULL));
+    srand((unsigned int)time(NULL));
     int random = l + rand() % (r - l);
     swap(a[random], a[r]);
     return partition(l, r);
